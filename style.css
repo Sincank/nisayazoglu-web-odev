@@ -109,6 +109,10 @@ h1 {
 
 }
 
+.para-biriktirme {
+    justify-content: flex-end;
+}
+
 .uzunkuyruklu {
     width: 250px;
     height: 250px;
@@ -118,5 +122,34 @@ h1 {
 .gozlem-yazi {
     font-size: 14px;
     color: black;
-    
+}
+
+
+.eski-bir-para {
+    width: 250px;
+    height: 250px;
+    margin-right: 25px;
+     
+}
+
+.eskipara-yazi {
+    font-size: 14px;
+    color: black;
+}
+
+.favori-filmler {
+    display: flex;
+    flex-direction: row;
+
+    justify-content: center;
+
+    margin-top: 200px;
+    background-color: lightgray;
+    height: 320px;
+
+}
+
+.favori-filmler img {
+    max-width: 100%;
+    height: auto;
 }
