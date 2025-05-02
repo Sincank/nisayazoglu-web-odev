@@ -14,7 +14,29 @@ body {
     padding: 40px 0px; /*ekran 1000pxden büyük olunca buranın etkisi asıl o zaman gözükür. */
 }
 
+.hakkımda-menu-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+}
 
+
+.giris-buton,
+.hakkımda-butonu {
+    padding: 0.5rem; /* 1rem = 16px + Butonun etrafı 8px iç boşlukla dolu olur */
+    transition: transform 250ms; /*yavaş geçiş sağlıyor */
+}
+
+.giris-buton:hover,
+.hakkımda-butonu:hover {
+    transform: scale(1.1); /*üzerine fare gelince 110% büyüsün */
+}
+
+.giris-buton:active,
+.hakkımda-butonu:active {
+    transform: scale(0.8); /*tıklayınca 80%'e küçülsün */
+}
 
 .profil-pic {
     width: 120px;
@@ -75,7 +97,7 @@ h1 {
 }
 
 .kutu-container {
-    margin-top: 400px;
+    margin-top: 350px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
