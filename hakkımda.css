@@ -38,6 +38,13 @@ body {
     transform: scale(0.8); /*tıklayınca 80%'e küçülsün */
 }
 
+
+.modal-content {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
 .profil-pic {
     width: 120px;
     height: 120px;
@@ -223,9 +230,6 @@ html {
     height: auto;
 }
 
-.modal-content {
-    padding: 10px;
-    border-radius: 10px;
-}
+
 
 
