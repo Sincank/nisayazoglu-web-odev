@@ -222,3 +222,46 @@ html {
     width: 230px;
     height: auto;
 }
+
+.modal {
+    display: none; /* kullanıcı butona tıklamadan göremez */
+    position: fixed; /* sayfa aşağı yukarı kaydırılsa bile bu kutu hep aynı yerde kalır */
+    top: 50%;
+    left: 50%; /* üst kenarını ve sol kenarını, ekranın tam ortasına yerleştirir. top ve left. Bu hâliyle kutunun sol üst köşesi ekranın ortasına gelir.
+    Yani kutunun kendisi tam ortada olmaz */
+
+    transform: translate(-50%, -50%); /* kutuyu kendi boyutunun yarısı kadar sola ve yukarı kaydırır. Kutunun tam ortası, ekranın tam ortasında olur. */
+
+
+    background-color: white;
+    z-index: 9999; /* Her şeyin üstünde olmasını sağlar. Çünkü çok büyük bir sayı */
+
+    width: 50%; /*ekranın yarısı */
+    padding: 20px; /* kutunun iç boşluğu */
+
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.5); /* 0px 0px: X ve Y yönünde kayma yok
+
+    10px: Gölgenin yayılma miktarı
+    
+    rgba(0,0,0,0.5): Yarı saydam siyah gölge */
+
+    border-radius: 10px;
+    text-align: left;
+}
+
+/*.modal-content {
+    background-color: #fff;
+
+}*/
+
+.kapatma-tusu {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.kapatma-tusu:hover {
+    color: black;
+}

@@ -99,5 +99,49 @@
             </div>
         </div>
 
+        <!--burada özgeçmişi hakkımda sayfasında küçük ekran halinde açmayı yapıyoruz-->
+        <div id="modalOzgecmis" class="modal">
+            <div class="modal-content">
+                <span class="kapatma-tusu">&times;</span>
+                <p>Ad: Nisa Yazoğlu</p>
+                <p>Doğum Tarihi: 11.06.2004</p>
+                <p>E-posta: nisayazoglu@ogr.sakarya.edu.tr</p>
+                <p>Telefon: 05540206769</p>
+
+                <div>
+                    Sakarya Üniversitesi<br>
+                    Bilgisayar Mühendisliği | 2023 - ? <br><br>
+
+                    Şehit Adil Büyükcengiz İmam Hatip Lisesi <br>
+                    Lise Diploması | 2018 - 2022 
+                </div>
+
+                <div>
+                    <h2>Beceriler</h2>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--özgeçmiş modalı açmak için js-->
+        <script>
+            const modal = document.getElementById("modalOzgecmis");
+            const ozgecmisButon = document.querySelector(".hakkımda-butonu:nth-child(2)"); //hakkımda butonlarından 2.sini seçmek
+            const span = document.querySelector(".kapatma-tusu"); //kapatma-tusu sınıfına ait ögeyi buldu. x işareti
+
+            ozgecmisButon.onclick = function() {
+                modal.style.display = "block";  //butona tıklayınca modalı görünür kılar. CSS'te display'e none demiştik. Burada bu durumun butona tıklanınca değişmesini sağlıyoruz
+            }
+
+            span.onclick = function() {
+                modal.style.display = "none"; 
+            }
+
+            
+        </script>
     </body>
 </html>
