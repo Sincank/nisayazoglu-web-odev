@@ -1,0 +1,61 @@
+.page {
+    display: none;
+    text-align: center;
+    padding: 50px;
+}
+
+.active {
+    display: block;
+}
+
+.arrow {
+    font-size: 2rem;
+    cursor: pointer;
+    user-select: none;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%);
+    color: #333;
+}
+
+.left-arrow {
+    left: 20px;
+}
+
+.right-arrow {
+    right: 20px;
+}
+
+.speech-bubble {
+    border: 1px solid black;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    background-color: #f0f0f0;
+    max-width: 250px;
+
+}
+
+.speech-bubble::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 30px;
+    border-width: 10px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+}
+
+.circle {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #ddd;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
