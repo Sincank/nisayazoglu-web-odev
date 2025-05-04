@@ -1,10 +1,7 @@
-function goToPage(pageNumber) {
-    document.querySelectorAll('.page').forEach(function(page) {
-        page.classList.remove('active');
-    });
+let currentPage = 0;
+    const slider = document.getElementById('slider');
 
-    const targetPage= document.getElementById('page-' + pageNumber);
-    if(targetPage) {
-        targetPage.classList.add('active');
+    function goToPage(index) {
+      currentPage = index;
+      slider.style.transform = `translateX(-${index * 100}vw)`;
     }
-}

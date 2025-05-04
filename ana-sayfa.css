@@ -1,61 +1,62 @@
-.page {
-    display: none;
-    text-align: center;
-    padding: 50px;
-}
-
-.active {
-    display: block;
-}
-
-.arrow {
-    font-size: 2rem;
-    cursor: pointer;
-    user-select: none;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%);
-    color: #333;
-}
-
-.left-arrow {
-    left: 20px;
-}
-
-.right-arrow {
-    right: 20px;
-}
-
-.speech-bubble {
-    border: 1px solid black;
-    display: inline-block;
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-bottom: 20px;
-    position: relative;
-    background-color: #f0f0f0;
-    max-width: 250px;
-
-}
-
-.speech-bubble::after {
-    content: '';
-    position: absolute;
-    bottom: -10px;
-    left: 30px;
-    border-width: 10px;
-    border-style: solid;
-    border-color: black transparent transparent transparent;
-}
-
-.circle {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    background-color: #ddd;
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  .slider {
+    width: 300vw;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .page {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  
+  /* İçerik kutusu */
+  .content-box {
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  /* Genel resim stilleri */
+  .resim {
     display: flex;
     align-items: center;
-    margin: auto;
+    justify-content: center;
     font-weight: bold;
-    font-size: 1.2rem;
-}
+    border: 1px solid #000;
+    width: 100%;
+  }
+  
+  /* Üst alan: ya RESİM 1 ya da CIRCLE ile aynı boy */
+  .resim-ust {
+    height: 150px;
+  }
+  
+  /* Alt resim her sayfada sabit */
+  .resim-alt {
+    height: 400px;
+  }
+  
+  /* Circle yapısı */
+  .circle {
+    width: 150px;
+    height: 150px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  
