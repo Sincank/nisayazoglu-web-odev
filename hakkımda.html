@@ -17,16 +17,21 @@
 
         <div class="container">
 
-            <nav class="hakkımda-menu-nav">
-
-                <div>
-                    <button class="hakkımda-butonu">Ana Sayfa</button>
-                    <button class="btn hakkımda-butonu" data-bs-toggle="modal" data-bs-target="#ozgecmisModal">Özgeçmiş</button>
+            <nav class="navbar navbar-expand-lg bg-light">  <!--navbar expands on large screens-->
+                <div class="container-fluid justify-content-between">
+                  
+                  <!-- Sol Menü Butonları -->
+                  <div class="d-flex">
+                    <button class="btn hakkımda-butonu me-2">Ana Sayfa</button>
+                    <button class="btn hakkımda-butonu me-2" data-bs-toggle="modal" data-bs-target="#ozgecmisModal">Özgeçmiş</button>
                     <button class="btn hakkımda-butonu" data-bs-toggle="modal" data-bs-target="#iletisimModal">İletişim</button>
+                  </div>
+              
+                  <!-- Sağ Giriş Butonu -->
+                  <button class="btn giris-buton btn-primary">Giriş Yap</button>
+              
                 </div>
-
-                    <button class="giris-buton">Giriş Yap</button>
-            </nav>
+              </nav>
 
             <div class="modal fade" id="ozgecmisModal">
                 <div class="modal-dialog">
@@ -90,78 +95,146 @@
             </div>
 
 
-
-
-            <div class="profile">
-                <img src="profile.jpg" alt="kendi fotoğrafım" class="profil-pic" />
-
-                <h1>NİSA YAZOĞLU</h1>
-
-                <p class="description"> 
+            <div class="container text-center my-5"> <!--(m)argin vertical(y)-->
+                <div class="profile d-flex flex-column align-items-center">  <!--d-flex:daha kontrollü yerleştirilir-->
+                  
+                  <!-- Profil Fotoğrafı -->
+                  <img src="profile.jpg" alt="kendi fotoğrafım" class="profil-pic mb-3" />
+              
+                  <!-- İsim -->
+                  <h1 class="h4 mb-2">NİSA YAZOĞLU</h1>  <!--h4: yaklaşık 1.5rem (24px)-->
+              
+                  <!-- Açıklama -->
+                  <p class="description rounded">
                     Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde 1.sınıf öğrencisiyim. Mezun olduktan sonra, binlerce medeniyetin ve dolayısıyla milyonlarca hikayenin yaşamış olduğu bu topraklarda kendi animasyon stüdyomu kurup hikayelerimi anlatabileceğime inanıyorum. 
-                </p>
-            </div>
+                  </p>
+              
+                </div>
+              </div>
+
+            <div class="container my-5">
+                <div class="row justify-content-center g-4">
+                  
+                  <!-- Hobi Kutusu -->
+                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
+                    <div class="baslik w-100 text-center">HOBİLER</div>
+                    <a href="#hobiler" class="mt-2">
+                      <button class="btn buton">İniş Yap</button>
+                    </a>
+                  </div>
+              
+                  <!-- Favori Filmler -->
+                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
+                    <div class="baslik w-100 text-center">FAVORİ FİLMLER</div>
+                    <a href="#filmler" class="mt-2">
+                      <button class="btn buton">İniş Yap</button>
+                    </a>
+                  </div>
+              
+                  <!-- Favori Kitaplar -->
+                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
+                    <div class="baslik w-100 text-center">FAVORİ KİTAPLAR</div>
+                    <a href="#kitaplar" class="mt-2">
+                      <button class="btn buton">İniş Yap</button>
+                    </a>
+                  </div>
+              
+                  <!-- İlgi Alanları -->
+                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
+                    <div class="baslik w-100 text-center">İLGİ ALANLARI</div>
+                    <button class="btn buton mt-2">İniş Yap</button>
+                  </div>
+              
+                </div>
+              </div>
+
+            <div style="height: 350px;"></div>
+
+              
+            <div class="container my-5 py-5 bg-light pt-5" id="hobiler">
+  
+                <!-- Başlık -->
+                <h2 class="text-center mb-4 fs-2">- HOBİLER -</h2>
+              
+                <!-- Kuş Gözlem Kartı -->
+                <div class="row align-items-center bg-secondary-subtle border border-dark p-3 mb-3 rounded">
+                  <div class="col-md-4 text-center">
+                    <img src="kus-resim.jpg" alt="uzunkuyruklu resmi" class="img-fluid rounded" style="max-height: 250px;" />
+                  </div>
+                  <div class="col-md-8">
+                    <p class="fs-5 text-dark m-0">Kuş gözlemi yapmak!</p>
+                  </div>
+                </div>
 
             
-            <div class="kutu-container">
-                <div class="kutu">
-                    <div class="baslik">HOBİLER</div>
-                    <a href="#hobiler"><button class="buton">iniş yap</button></a>
+              
+                <!-- Eski Para Kartı -->
+                <div class="row align-items-center bg-secondary-subtle border border-dark p-3 rounded">
+                  <div class="col-md-8 text-end">
+                    <p class="fs-5 text-dark m-0">Eski para toplamak!</p>
+                  </div>
+                  <div class="col-md-4 text-center">
+                    <img src="eski-para.jpg" alt="eski para resmi" class="img-fluid rounded" style="max-height: 250px;" />
+                  </div>
                 </div>
-
-                <div class="kutu">
-                    <div class="baslik">FAVORİ FİLMLER</div>
-                    <a href="#filmler"><button class="buton">iniş yap</button></a>
-                </div>
-
-                <div class="kutu">
-                    <div class="baslik">FAVORİ KİTAPLAR</div>
-                    <a href="#kitaplar"><button class="buton">iniş yap</button></a>
-                </div>
-
-                <div class="kutu">
-                    <div class="baslik">İLGİ ALANLARI</div>
-                    <button class="buton">iniş yap</button>
-                </div>
-                
+              
             </div>
 
+            <div style="height: 350px;"></div>
 
-            <div class="hobi-ornekleri">
-                <div class="hobiler-yazisi" id="hobiler">-HOBİLER-</div>
-                <div class="kus-gozlem">
-                    <img src="kus-resim.jpg" alt="uzunkuyruklu resmi" class="uzunkuyruklu" />
-                    <div class="gozlem-yazi">Kuş gözlemi yapmak!</div>
+
+
+                    <!-- FAVORİ FİLMLER -->
+            <div class="container my-5" id="filmler">
+                <h2 class="text-center pt-5 pb-4 fs-2">- FAVORİ FİLMLER -</h2>
+                <div class="row justify-content-center g-0">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="filmler/banshees.png" alt="The Banshees of Inisherin" class="img-fluid" />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="filmler/cucukvecanavar.jpg" alt="Çocuk ve Canavar" class="img-fluid " />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="filmler/budapest.png" alt="Büyük Budapeşte Oteli" class="img-fluid" />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="filmler/spiderverse.jpg" alt="Spider-verse Filmleri" class="img-fluid" />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="filmler/waltermitty.png" alt="Walter Mitty'nin Gizli Yaşamı" class="img-fluid" />
+                    </div>
                 </div>
+            </div>
+  
 
-                <div class="para-biriktirme">
-                    <div class="eskipara-yazi">Eski para toplamak!</div>
-                    <img src="eski-para.jpg" alt="eski para resmi" class="eski-bir-para" />
+            <div style="height: 350px;"></div>
+
+
+                    <!-- FAVORİ KİTAPLAR -->
+            <div class="container my-5" id="kitaplar">
+                <h2 class="text-center pt-5 pb-4 fs-2">- FAVORİ KİTAPLAR -</h2>
+                <div class="row justify-content-center g-0">
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="kitaplar/kanakacak.jpg" alt="Kan Akacak ve Bitecek" class="img-fluid" />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="kitaplar/tus.jpg" alt="Tuş" class="img-fluid " />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="kitaplar/kaynanam.jpg" alt="Evlere Şenlik Kaynanam Nasıl Kudurdu" class="img-fluid " />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="kitaplar/redkit.png" alt="Red Kit'i Öldüren Adam" class="img-fluid " />
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-2">
+                        <img src="kitaplar/lanetlitavsan.jpg" alt="Lanetli Tavşan" class="img-fluid" />
+                    </div>
                 </div>
             </div>
 
-            
-            <div class="film-container" >
-                <div class="film-yazisi" id="filmler">-FAVORİ FİLMLER-</div>
-                <div class="favori-filmler">
-                    <img src="filmler/banshees.png" alt="The Banshees of Inisherin" class="banshees-pic" />
-                    <img src="filmler/cucukvecanavar.jpg" alt="Çocuk ve Canavar" class="cocukvecanavar-pic" />
-                    <img src="filmler/budapest.png" alt="Büyük Budapeşte Oteli" class="budapest-pic"/>
-                    <img src="filmler/spiderverse.jpg" alt="Spider-verse Filmeri" class="spider-pic"/>
-                    <img src="filmler/waltermitty.png" alt="Walter Mitty'nin Gizli Yaşamı" class="walter-pic"/>
-                </div>
-            </div>
+            <div style="height: 350px;"></div>
 
-            <div class="kitap-container">
-                <div class="kitap-yazisi" id="kitaplar">-FAVORİ KİTAPLAR-</div>
-                <div class="favori-kitaplar">
-                    <img src="kitaplar/kanakacak.jpg" alt="Kan Akacak ve Bitecek" class="kanakacak-pic" />
-                    <img src="kitaplar/tus.jpg" alt="Tuş" class="tus-pic" />
-                    <img src="kitaplar/kaynanam.jpg" alt="Evlere Şenlik Kaynanam Nasıl Kudurdu" class="kaynanam-pic" />
-                    <img src="kitaplar/redkit.png" alt="Red Kit'i Öldüren Adam" class="redkit-pic" />
-                    <img src="kitaplar/lanetlitavsan.jpg" alt="Lanetli Tavşan" class="lanetli-pic" />
-                </div>
-            </div>
+  
         </div>
 
        
