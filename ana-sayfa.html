@@ -14,17 +14,45 @@
 <body class="bg">
 
     <nav class="p-3">
-        <button class="logobtn"><img src="ana-sayfa-malz/ana-sayfa-logosu.png" width="40"></button>
+        <button class="logobtn" onclick="anaSayfayaGit()">
+            <img src="ana-sayfa-malz/ana-sayfa-logosu.png" width="40">
+        </button>
+        
     </nav>
     
-    <div class="container">
-        <div>
-            <img src="ana-sayfa-malz/konuşma-balonu4.png">
-        </div>
-        <div>
-            <img src="ana-sayfa-malz/roket-ve-ben2.png">
-        </div>
-    </div>
     
+
+
+    <div class="slider">
+        <section class="slide" id="sayfa1">
+             <img src="ana-sayfa-malz/konuşma-balonu4.png" class="ustkisim">
+             <button class="sag-buton" onclick="yanSayfa(2)">&gt;</button>
+        </section>
+
+        <section class="slide" id="sayfa2">
+            <a href="hakkımda.html">
+                <img src="ana-sayfa-malz/hakkımdagezegeni.png" class="ustkisim gezegen-hover">
+            </a>
+
+            <button class="sol-buton" onclick="yanSayfa(1)">&lt;</button>
+            <button class="sag-buton" onclick="yanSayfa(3)">&gt;</button>
+        </section>
+
+        <section class="slide" id="sayfa3">
+            <img src="ana-sayfa-malz/memleketgezegeni.png" class="ustkisim">
+
+            <button class="sol-buton" onclick="yanSayfa(2)">&lt;</button>
+        </section>
+
+  </div> 
+  <img src="ana-sayfa-malz/roket-ve-ben2.png" class="roket-sabit">
+
+    
+    
+
+    
+    
+
+    <script src="ana-sayfa.js"></script>
 </body>
 </html>
