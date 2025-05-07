@@ -1,0 +1,37 @@
+.bg {
+    background-image: url('ana-sayfa-malz/ana-sayfa-arkaplan.png');
+    background-size: cover;
+    
+}
+
+
+.logobtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 250ms;
+
+}
+
+.logobtn:hover {
+    transform: scale(1.1);
+}
+
+.logobtn:active {
+    transform: scale(0.8);
+}
+
+.logobtn img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* hafif koyu şeffaf arka plan */
+  }
+
+.container {
+        height: 600px;
+        
+  }
+
