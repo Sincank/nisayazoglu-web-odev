@@ -1,246 +1,135 @@
 <!DOCTYPE html>
-<html lang = "tr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width; initial-scale=1.0" />  <!-- cihazın ekran genişliği ile uyum sağlama -->
-        <title>Nisa Yazoğlu - Hakkımda</title>
-        
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nisa Yazoğlu - Hakkımda</title>
 
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
               
-        <link rel="stylesheet" href="hakkımda.css" />  <!--css kütüphanesini bootstraptan sonra koymazsak ayarladığımız değerler bootstrap'dan sonra yükleneceği için yok olur-->
-    </head>
+    <link rel="stylesheet" href="hakkımda.css" />
 
-    <body>
-
-        <div class="container">
-
-            <nav class="navbar navbar-expand-lg bg-light">  <!--navbar expands on large screens-->
-                <div class="container-fluid justify-content-between">
-                  
-                  <!-- Sol Menü Butonları -->
-                  <div class="d-flex">
-                    <a href="ana-sayfa.html">
-                      <img src="ana-sayfa-malz/ana-sayfa-logosu.png" class="hakkımda-butonu" />
-                    </a>
-
-                    <button class="btn hakkımda-butonu me-2" data-bs-toggle="modal" data-bs-target="#ozgecmisModal">Özgeçmiş</button>
-                    <button class="btn hakkımda-butonu" data-bs-toggle="modal" data-bs-target="#iletisimModal">İletişim</button>
-                  </div>
-              
-                  <!-- Sağ Giriş Butonu -->
-                  <button class="btn giris-buton btn-primary">Giriş Yap</button>
-              
-                </div>
-              </nav>
-
-            <div class="modal fade" id="ozgecmisModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
 
-                        <div class="modal-header">
-                            <h4 class="modal-title">Özgeçmiş</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
+
+</head>
+<body>
+    <nav class="d-flex p-3"> <!--d-flex yatay hizalama yapar. girişi sağa koymak için lazım oldu.-->
+        <a href="ana-sayfa.html">
+            <img src="ana-sayfa-malz/ana-sayfa-logosu.png" alt="logo" class="hakkımda-butonları me-3 ms-2" width="50px">
+        </a>
+
+      <button class="btn hakkımda-butonları" data-bs-toggle = "modal" data-bs-target="#ozgecmisModal"> Özgeçmiş </button>
+      <button class="btn hakkımda-butonları" data-bs-toggle = "modal" data-bs-target="#iletisimModal"> İletişim </button>
+
+      <button class="btn hakkımda-butonları ms-auto me-2"> Giriş Yap </button>
+    </nav>
+
+  <div class="container">
+
+    <div class="modal fade" id="ozgecmisModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
 
-                        <div class="modal-body">
-                            <p>Ad: Nisa Yazoğlu</p>
-                            <p>Doğum Tarihi: 11.06.2004</p>
-                            <p>E-posta: nisayazoglu@ogr.sakarya.edu.tr</p>
-                            <p>Telefon: 05540206769</p>
-
-                            <div>
-                                Sakarya Üniversitesi<br>
-                                Bilgisayar Mühendisliği | 2023 - ? <br><br>
-
-                                Şehit Adil Büyükcengiz İmam Hatip Lisesi <br>
-                                Lise Diploması | 2018 - 2022 
-                            </div>
-
-                            <div>
-                                <h2>Beceriler</h2>
-                                    <ul>
-                                        <li>HTML</li>
-                                        <li>CSS</li>
-                                        <li>JS</li>
-                                    </ul>
-                            </div>
-                        </div>
+          <div class="modal-header">
+            <h4 class="modal-title">Özgeçmiş</h4>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
 
 
-                    </div>
-                </div>
+          <div class="modal-body">
+            <p>Ad: Nisa Yazoğlu</p>
+            <p>Doğum Tarihi: 11.06.2004</p>
+            <p>E-posta: nisayazoglu@ogr.sakarya.edu.tr</p>
+            <p>Telefon: 05540206769</p>
+
+            <div>
+              Sakarya Üniversitesi<br>
+              Bilgisayar Mühendisliği | 2023 - ? <br><br>
+
+              Şehit Adil Büyükcengiz İmam Hatip Lisesi <br>
+              Lise Diploması | 2018 - 2022 
             </div>
 
-
-            <div class="modal fade" id="iletisimModal">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-
-
-                        <div class="modal-header">
-                            <h4 class="modal-title">İletişim</h4>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                        </div>
-
-
-                        <div class="modal-body">
-                            <p>E-posta: nisayazoglu@ogr.sakarya.edu.tr</p>
-                            <p>Telefon: 05540206769</p>
-                        </div>
-
-                    </div>
-                </div>
+            <div>
+              <h2>Beceriler</h2>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+              </ul>
             </div>
+          </div>
 
-
-            <div class="container text-center my-5"> <!--(m)argin vertical(y)-->
-                <div class="profile d-flex flex-column align-items-center">  <!--d-flex:daha kontrollü yerleştirilir-->
-                  
-                  <!-- Profil Fotoğrafı -->
-                  <img src="profile.jpg" alt="kendi fotoğrafım" class="profil-pic mb-3" />
-              
-                  <!-- İsim -->
-                  <h1 class="h4 mb-2">NİSA YAZOĞLU</h1>  <!--h4: yaklaşık 1.5rem (24px)-->
-              
-                  <!-- Açıklama -->
-                  <p class="description rounded">
-                    Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde 1.sınıf öğrencisiyim. Mezun olduktan sonra, binlerce medeniyetin ve dolayısıyla milyonlarca hikayenin yaşamış olduğu bu topraklarda kendi animasyon stüdyomu kurup hikayelerimi anlatabileceğime inanıyorum. 
-                  </p>
-              
-                </div>
-              </div>
-
-            <div class="container my-5">
-                <div class="row justify-content-center g-4">
-                  
-                  <!-- Hobi Kutusu -->
-                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
-                    <div class="baslik w-100 text-center">HOBİLER</div>
-                    <a href="#hobiler" class="mt-2">
-                      <button class="btn buton">İniş Yap</button>
-                    </a>
-                  </div>
-              
-                  <!-- Favori Filmler -->
-                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
-                    <div class="baslik w-100 text-center">FAVORİ FİLMLER</div>
-                    <a href="#filmler" class="mt-2">
-                      <button class="btn buton">İniş Yap</button>
-                    </a>
-                  </div>
-              
-                  <!-- Favori Kitaplar -->
-                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
-                    <div class="baslik w-100 text-center">FAVORİ KİTAPLAR</div>
-                    <a href="#kitaplar" class="mt-2">
-                      <button class="btn buton">İniş Yap</button>
-                    </a>
-                  </div>
-              
-                  <!-- İlgi Alanları -->
-                  <div class="col-6 col-md-3 d-flex flex-column align-items-center kutu">
-                    <div class="baslik w-100 text-center">İLGİ ALANLARI</div>
-                    <button class="btn buton mt-2">İniş Yap</button>
-                  </div>
-              
-                </div>
-              </div>
-
-            <div style="height: 350px;"></div>
-
-              
-            <div class="container my-5 py-5 bg-light pt-5" id="hobiler">
-  
-                <!-- Başlık -->
-                <h2 class="text-center mb-4 fs-2">- HOBİLER -</h2>
-              
-                <!-- Kuş Gözlem Kartı -->
-                <div class="row align-items-center bg-secondary-subtle border border-dark p-3 mb-3 rounded">
-                  <div class="col-md-4 text-center">
-                    <img src="kus-resim.jpg" alt="uzunkuyruklu resmi" class="img-fluid rounded" style="max-height: 250px;" />
-                  </div>
-                  <div class="col-md-8">
-                    <p class="fs-5 text-dark m-0">Kuş gözlemi yapmak!</p>
-                  </div>
-                </div>
-
-            
-              
-                <!-- Eski Para Kartı -->
-                <div class="row align-items-center bg-secondary-subtle border border-dark p-3 rounded">
-                  <div class="col-md-8 text-end">
-                    <p class="fs-5 text-dark m-0">Eski para toplamak!</p>
-                  </div>
-                  <div class="col-md-4 text-center">
-                    <img src="eski-para.jpg" alt="eski para resmi" class="img-fluid rounded" style="max-height: 250px;" />
-                  </div>
-                </div>
-              
-            </div>
-
-            <div style="height: 350px;"></div>
-
-
-
-                    <!-- FAVORİ FİLMLER -->
-            <div class="container my-5" id="filmler">
-                <h2 class="text-center pt-5 pb-4 fs-2">- FAVORİ FİLMLER -</h2>
-                <div class="row justify-content-center g-0">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="filmler/banshees.png" alt="The Banshees of Inisherin" class="img-fluid" />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="filmler/cucukvecanavar.jpg" alt="Çocuk ve Canavar" class="img-fluid " />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="filmler/budapest.png" alt="Büyük Budapeşte Oteli" class="img-fluid" />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="filmler/spiderverse.jpg" alt="Spider-verse Filmleri" class="img-fluid" />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="filmler/waltermitty.png" alt="Walter Mitty'nin Gizli Yaşamı" class="img-fluid" />
-                    </div>
-                </div>
-            </div>
-  
-
-            <div style="height: 350px;"></div>
-
-
-                    <!-- FAVORİ KİTAPLAR -->
-            <div class="container my-5" id="kitaplar">
-                <h2 class="text-center pt-5 pb-4 fs-2">- FAVORİ KİTAPLAR -</h2>
-                <div class="row justify-content-center g-0">
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="kitaplar/kanakacak.jpg" alt="Kan Akacak ve Bitecek" class="img-fluid" />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="kitaplar/tus.jpg" alt="Tuş" class="img-fluid " />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="kitaplar/kaynanam.jpg" alt="Evlere Şenlik Kaynanam Nasıl Kudurdu" class="img-fluid " />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="kitaplar/redkit.png" alt="Red Kit'i Öldüren Adam" class="img-fluid " />
-                    </div>
-                    <div class="col-6 col-md-4 col-lg-2">
-                        <img src="kitaplar/lanetlitavsan.jpg" alt="Lanetli Tavşan" class="img-fluid" />
-                    </div>
-                </div>
-            </div>
-
-            <div style="height: 350px;"></div>
-
-  
         </div>
+      </div>
+    </div>
 
-       
-        
-    </body>
+
+    <div class="modal fade" id="iletisimModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+
+              <div class="modal-header">
+                <h4 class="modal-title">İletişim</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+
+              <div class="modal-body">
+                <p>E-posta: nisayazoglu@ogr.sakarya.edu.tr</p>
+                <p>Telefon: 05540206769</p>
+              </div>
+
+          </div>
+        </div>
+    </div>
+
+    <div class="d-flex flex-column align-items-center profil-kutusu">
+      <img src="profile.jpg" alt="kendi fotoğrafım" class="profil-resmi">
+
+      <h1 style="color: white;">Nisa Yazoğlu</h1>
+
+      <p class="description rounded text-center" style="color: white;">
+        Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde 1.sınıf öğrencisiyim. Mezun olduktan sonra, binlerce medeniyetin ve dolayısıyla milyonlarca hikayenin yaşamış olduğu bu topraklarda kendi animasyon stüdyomu kurup hikayelerimi anlatabileceğime inanıyorum. 
+      </p>
+    </div>
+    
+  </div>
+    
+    <div class="gezegen-kutusu">
+      <div class="d-flex flex-column align-items-center">
+        <img src="gezegenler-hakkımda/hobiler.png" class="gezegenler">
+        <a href="#hobiler" class="btn mt-2 gezBtn hobiRenk">İniş Yap</a>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+        <img src="gezegenler-hakkımda/favorifilmler.png" class="gezegenler">
+        <a href="#filmler" class="btn mt-2 gezBtn filmRenk">İniş Yap</a>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+        <img src="gezegenler-hakkımda/favorikitaplar.png" class="gezegenler">
+        <a href="#kitaplar" class="btn mt-2 gezBtn kitapRenk">İniş Yap</a>
+      </div>
+
+      <div class="d-flex flex-column align-items-center">
+        <img src="gezegenler-hakkımda/ilgialanları.png" class="gezegenler">
+        <a>
+          <button class="btn mt-2 gezBtn ilgiRenk">İniş Yap</button>
+        </a>
+      </div>
+      
+      
+      
+      
+    </div>
+</body>
 </html>

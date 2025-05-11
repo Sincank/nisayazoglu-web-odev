@@ -1,97 +1,71 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;  /* neden */
-    padding: 0;
-    background: #f9f9f9;
-    text-align: center;
+    font-family: 'Audiowide', sans-serif;
+    background-color: black;
 }
 
+nav {
+    background-color: rgba(0, 0, 0, 0.8); /* hafif koyu şeffaf arka plan */
+  }
 
-.container {
-    width: 100%;
-    max-width: 1250px;  /* 1350 e kadar artabilir */
-    margin: 0 auto;
-    padding: 13px 0px; /*ekran 1350pxden büyük olunca buranın etkisi asıl o zaman gözükür. */
-}
-
-.hakkımda-menu-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 5px;
-}
-
-
-.giris-buton,
-.hakkımda-butonu {
-    padding: 0.5rem; /* 1rem = 16px + Butonun etrafı 8px iç boşlukla dolu olur */
+.gezBtn,
+.hakkımda-butonları {
+    color: white;
     transition: transform 250ms; /*yavaş geçiş sağlıyor */
-} 
+}
 
-.giris-buton:hover,
-.hakkımda-butonu:hover {
+.hakkımda-butonları:hover {
+    color: gray;
+}
+
+.gezBtn:hover,
+.hakkımda-butonları:hover {
     transform: scale(1.1); /*üzerine fare gelince 110% büyüsün */
 }
 
-.giris-buton:active,
-.hakkımda-butonu:active {
+.gezBtn:active,
+.hakkımda-butonları:active {
     transform: scale(0.8); /*tıklayınca 80%'e küçülsün */
+    color: white !important;
 }
 
-
-.modal-content {
-    padding: 10px;
-    border-radius: 10px;
+.profil-kutusu {
+    margin-top: 120px;
 }
 
-
-.profil-pic {
+.profil-resmi {
     width: 120px;
     height: 120px;
     border-radius: 100%;
     object-fit: cover;
 }
-    
 
-
-.description {
-    margin-top: 20px;
-    background-color: #ddd;
-    padding: 5px;
-    font-size: 14px;
-    max-width: 800px;
-    margin-bottom: 350px;
+.gezegen-kutusu {
+    margin-top: 450px;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
 }
 
-.kutu {
-    min-width: 160px;
-  }
-  
-  .baslik {
-    background-color: lightgray;
-    padding: 15px;
-  }
-  
-  .buton {
-    background-color: #ddd;
-    border-radius: 10px;
-    padding: 5px 15px;
-    transition: background-color 0.3s;
-  }
-  
-  .buton:hover {
-    background-color: #bbb;
-  }
 
-html {
-    scroll-behavior: smooth;
+.gezegen-kutusu img {
+    width: 150px;
+    height: auto;
+} 
+
+
+.hobiRenk:hover {
+    transform: scale(1.1);
+    color: blue;
 }
-
-img {
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-
-
-
+.filmRenk:hover {
+    transform: scale(1.1); 
+    color: orange;
+}
+.kitapRenk:hover {
+    transform: scale(1.1);
+    color: purple;
+}
+.ilgiRenk:hover {
+    transform: scale(1.1);
+    color: red;
+}
