@@ -82,3 +82,18 @@ html {
 .hobiler img:hover {
     cursor: pointer;
 }
+
+.kitaplar img,
+.filmler img {
+    height: 300px;
+}
+
+.kitaplar img {
+    margin-bottom: 330px;
+}
+
+.kitaplar,
+.filmler {
+    margin-top: 450px;
+    scroll-margin-top: 100px;
+}
