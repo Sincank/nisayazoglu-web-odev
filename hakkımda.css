@@ -7,6 +7,10 @@ nav {
     background-color: rgba(0, 0, 0, 0.8); /* hafif koyu şeffaf arka plan */
   }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .gezBtn,
 .hakkımda-butonları {
     color: white;
@@ -73,4 +77,8 @@ nav {
 
 .hobiler {
     margin-top: 450px;
+}
+
+.hobiler img:hover {
+    cursor: pointer;
 }
