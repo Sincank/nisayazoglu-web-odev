@@ -1,25 +1,32 @@
 body {
+    font-family: 'Audiowide', sans-serif;
     background-color: black;
 }
 
 nav {
-  background-color: rgba(38, 37, 37, 0.8); 
+    background-color: rgba(38, 37, 37, 0.8); 
 }
 
+.girisBtn,
 .logobtn {
     background: transparent;
     border: none;
     cursor: pointer;
     transition: transform 250ms;
-
+    color: white;
 }
 
+.girisBtn:hover,
 .logobtn:hover {
     transform: scale(1.1);
+    color: gray;
 }
 
+.girisBtn:active,
 .logobtn:active {
     transform: scale(0.8);
+    color: white !important;
+
 }
 
 .logobtn {

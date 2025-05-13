@@ -13,7 +13,7 @@ nav {
   border: none;
   cursor: pointer;
   transition: transform 250ms;
-
+  color: white;
 }
 
 .mirasBtn:hover,
@@ -33,6 +33,3 @@ nav {
   height: auto;
 }
 
-.mirasBtn {
-  color: white;
-}
