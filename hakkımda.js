@@ -1,10 +1,16 @@
 const para = document.getElementById("eskiPara");
-para.addEventListener("click", () => {
-    para.src = "hakkımda-malz/hobiler/eskipara.gif";
+let isGifPlaying = false;
 
-    setTimeout(() => {
+para.addEventListener("click", () => {
+    if (!isGifPlaying) {
+        para.src = "hakkımda-malz/hobiler/eskipara.gif?t=" + new Date().getTime();
+    } else {
         para.src = "hakkımda-malz/hobiler/eskipara.png";
-    }, 2500); 
-})
+    }
+
+    isGifPlaying = !isGifPlaying;
+});
+
+
 
 
