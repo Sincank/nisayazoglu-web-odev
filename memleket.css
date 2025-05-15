@@ -1,6 +1,6 @@
 body {
   font-family: 'Audiowide', sans-serif;
-   background-color: black;
+   background-color: rgb(0, 0, 0);
 }
 
 nav {
@@ -32,4 +32,52 @@ nav {
   width: 50px;
   height: auto;
 }
+
+
+.resim-container {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.kale {
+  width: 100%;
+  display: block;
+  border-radius: 2px;
+  opacity: 0.9;
+   margin-top: 40px;
+}
+
+
+
+.sehir-menu {
+  position: absolute;  /*resmin bir kısmının üstünde durması için*/
+  top: 100px;
+  left: -70px; /* bir kısmı resmin dışına taşıyor */
+  width: 160px;
+  height: 500px;
+  background-color: rgba(240, 240, 240, 0.9);
+  padding: 15px;
+  border-radius: 3px;
+}
+
+
+/* Ortaya yakın başka bir kutu */
+.bilgi-kutusu {
+  position: absolute;
+  top: -20px;
+  left: 500px;
+  width: 600px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.sehir-item {
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
 

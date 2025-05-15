@@ -1,0 +1,43 @@
+body {
+    font-family: 'Audiowide', sans-serif;
+    text-align: center;
+    padding: 20px;
+    background-color: #0b0c2a;
+    color: white;
+}
+
+.apiImg {
+    max-width: 100%;
+    height: auto;
+    border: 5px solid white;
+    margin-top: 20px;
+}
+
+.aciklama {
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: justify;
+}
+
+.ok {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 40px; /* isteğe göre ayarlayabilirsin */
+  height: auto;
+  cursor: pointer;
+  transition: transform 250ms;
+}
+
+
+.ok:hover {
+  transform: scale(1.1);
+  color: gray;
+}
+
+.ok:active {
+  transform: scale(0.8);
+  color: white !important;
+}
+
+
