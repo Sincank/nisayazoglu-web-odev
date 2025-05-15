@@ -10,7 +10,7 @@
     });
 
     item.addEventListener('mouseout', function () {
-      bilgiMetni.textContent = "Bayburt, Doğu Karadeniz'de bulunan ve Çoruh Nehri'ne yaslanan Türkiye'nin bir şehri ve Bayburt ilinin merkezidir.";
+      bilgiMetni.innerHTML = "<strong>Bayburt, </strong> <br> Doğu Karadeniz'de bulunan ve Çoruh Nehri'ne yaslanan Türkiye'nin bir şehri ve Bayburt ilinin merkezidir.";
     });
   });
 
