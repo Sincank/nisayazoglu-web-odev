@@ -1,6 +1,6 @@
 body {
   font-family: 'Audiowide', sans-serif;
-   background-color: rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
 }
 
 nav {
@@ -45,7 +45,7 @@ nav {
   display: block;
   border-radius: 2px;
   opacity: 0.9;
-   margin-top: 40px;
+  margin-top: 40px;
 }
 
 
@@ -79,9 +79,26 @@ nav {
   cursor: pointer;
 }
 
-.slider {
+
+.baksiSlide {
   margin-top: 100px;
 }
+
+
+.ilkResim {
+  height: 400px;
+  width: auto;
+  object-fit: cover; /* Görsel taşarsa kırp */
+}
+
+.resimOrtalama {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
 
 
 
