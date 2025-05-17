@@ -98,6 +98,19 @@ nav {
   height: 100%;
 }
 
+.baksiIlkDiv {
+  width: 900px;
+  margin: 0 auto; /* Kutuyu sayfa ortasına al */
+  margin-top: 150px;
+}
+
+.odulBaksi {
+  width: 900px;
+  margin: 0 auto; 
+  margin-top: 150px;
+}
+
+
 
 
 
