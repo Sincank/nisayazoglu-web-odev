@@ -59,6 +59,12 @@ nav {
   background-color: rgba(240, 240, 240, 0.9);
   padding: 15px;
   border-radius: 3px;
+  transition: transform 250ms;
+
+}
+
+.sehir-menu:hover {
+  transform: scale(1.1);
 }
 
 
@@ -80,8 +86,10 @@ nav {
 }
 
 
-.baksiSlide {
-  margin-top: 100px;
+.baksiBaslik {
+  margin-top: 250px;
+  color: #fff;
+  margin-bottom: 50px;
 }
 
 
@@ -96,19 +104,55 @@ nav {
   justify-content: center;
   align-items: center;
   height: 100%;
+  flex-direction: column;
 }
 
+.konusmalarBaksi,
+.sergiBaksi,
+.kadinEgitim,
+.odulBaksi,
 .baksiIlkDiv {
   width: 900px;
   margin: 0 auto; /* Kutuyu sayfa ortasına al */
   margin-top: 150px;
 }
 
-.odulBaksi {
-  width: 900px;
-  margin: 0 auto; 
-  margin-top: 150px;
+.sergiBaksi,
+.kadinEgitim p {
+  color: white;
 }
+
+.sergiBaksi p {
+  font-size: 15px;
+}
+
+.konusmalarBaksi {
+  margin-bottom: 150px;
+}
+
+.slide-caption {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 16px;              /* resimle p arası boşluk */
+  color: #fff; 
+}
+
+.carousel-item {
+  text-align: center;           
+}
+
+.resimOrtalama img {
+  transition: transform 250ms;
+}
+
+.resimOrtalama img:hover {
+    transform: scale(1.1);
+}
+
+.resimOrtalama img:active {
+    transform: scale(0.8);
+}
+
 
 
 
