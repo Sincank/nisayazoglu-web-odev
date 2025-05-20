@@ -38,14 +38,17 @@
             <label for="telefon">Telefon:</label>
             <input type="tel" id="telefon" name="telefon" class="form-control" v-model="telefon">
 
-            <label>Cinsiyet:</label>
-              <div>
-                <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
-                <label for="erkek">Erkek</label>
-
-                <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
-                <label for="kadin">Kadın</label>
+           <label>Cinsiyet:</label>
+            <div class="d-flex justify-content-center gap-5">
+              <div class="form-check">
+                <input type="radio" id="erkek" name="cinsiyet" value="Erkek" class="form-check-input">
+                <label for="erkek" class="form-check-label">Erkek</label>
               </div>
+              <div class="form-check">
+                <input type="radio" id="kadin" name="cinsiyet" value="Kadın" class="form-check-input">
+                <label for="kadin" class="form-check-label">Kadın</label>
+              </div>
+            </div>
 
 
             <label for="konu">Konu:</label>
