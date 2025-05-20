@@ -8,6 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="iletisim.css">
 
 </head>
 
@@ -25,30 +26,52 @@
     <div class="col-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
       <div style="max-width: 400px; width: 100%;">
         <h2 class="text-center mb-4" style="font-family: 'Audiowide', sans-serif;">Bana Ulaşın</h2>
-        <form action="#" method="post" class="vstack gap-3">
-          <label for="name">Ad Soyad:</label>
-          <input type="text" id="name" name="name" placeholder="Adınızı yazın" class="form-control">
 
-          <label for="email">E-posta:</label>
-          <input type="email" id="mail" name="mail" class="form-control">
+        <div id="app">
+          <form action="#" method="post" @submit.prevent="kontrolEt" class="vstack gap-3">
+            <label for="name">Ad Soyad:</label>
+            <input type="text" id="name" name="name" placeholder="Adınızı yazın" class="form-control" >
 
-          <label for="telefon">Telefon:</label>
-          <input type="tel" id="telefon" name="telefon" class="form-control">
+            <label for="email">E-posta:</label>
+            <input type="email" id="mail" name="mail" class="form-control">
 
-          <label for="konu">Konu:</label>
-          <select id="konu" name="konu" class="form-select">
-            <option value="genelSoru">Genel Soru</option>
-            <option value="isOrtak">İş Ortaklığı</option>
-            <option value="oneri">Geri bildirim / Öneri</option>
-            <option value="sikayet">Şikayet</option>
-            <option value="diger">Diğer</option>
-          </select>
+            <label for="telefon">Telefon:</label>
+            <input type="tel" id="telefon" name="telefon" class="form-control">
 
-          <label for="mesaj">Mesaj:</label>
-          <textarea id="mesaj" name="mesaj" class="form-control"></textarea>
+            <label>Cinsiyet:</label>
+              <div>
+                <input type="radio" id="erkek" name="cinsiyet" value="Erkek">
+                <label for="erkek">Erkek</label>
 
-          <button type="submit" class="btn btn-primary align-self-start">Gönder</button>
-        </form>
+                <input type="radio" id="kadin" name="cinsiyet" value="Kadın">
+                <label for="kadin">Kadın</label>
+              </div>
+
+
+            <label for="konu">Konu:</label>
+            <select id="konu" name="konu" class="form-select">
+              <option value="genelSoru">Genel Soru</option>
+              <option value="isOrtak">İş Ortaklığı</option>
+              <option value="oneri">Geri bildirim / Öneri</option>
+              <option value="sikayet">Şikayet</option>
+              <option value="diger">Diğer</option>
+            </select>
+
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" class="form-control"></textarea>
+
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="kvkk" >
+              <label class="form-check-label" for="kvkk">
+                KVKK metnini okudum ve kabul ediyorum.
+              </label>
+            </div>
+
+            <button type="button" onclick="kontrolEt()" class="btn btn-warning">JS ile Kontrol Et</button>
+            <button type="submit" class="btn btn-success">Vue ile Kontrol Et</button>
+          </form>
+        </div>
+
       </div>
     </div>
 
@@ -56,6 +79,63 @@
   </div>
 </div>
 
+
+  <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+
+  <script>
+  const { createApp } = Vue;
+
+  createApp({
+    data() {
+      return {
+        ad: "",
+        email: "",
+        telefon: "",
+        konu: "",
+        mesaj: "",
+        kvkk: false
+      };
+    },
+    methods: {
+      kontrolEt() {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        const telefonRegex = /^[0-9]{10,15}$/;
+
+        if (this.ad.trim() === "") {
+          alert("Ad Soyad boş olamaz.");
+          return;
+        }
+
+        if (!emailRegex.test(this.email)) {
+          alert("Geçerli bir e-posta adresi girin.");
+          return;
+        }
+
+        if (!telefonRegex.test(this.telefon)) {
+          alert("Geçerli bir telefon numarası girin.");
+          return;
+        }
+
+        if (this.konu === "") {
+          alert("Lütfen bir konu seçin.");
+          return;
+        }
+
+        if (this.mesaj.trim().length < 10) {
+          alert("Mesaj en az 10 karakter olmalı.");
+          return;
+        }
+
+        if (!this.kvkk) {
+          alert("KVKK onay kutusunu işaretlemelisiniz.");
+          return;
+        }
+
+        alert("Vue ile form başarıyla kontrol edildi!");
+      }
+    }
+  }).mount("#app");
+  </script>
 
 
   <script src="iletisim.js"></script>
