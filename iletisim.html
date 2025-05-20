@@ -24,19 +24,19 @@
     </div>
 
     <div class="col-6 d-flex justify-content-center align-items-center" style="height: 100vh;">
-      <div style="max-width: 400px; width: 100%;">
+      <div class="form-container" style="max-width: 400px; width: 100%;">
         <h2 class="text-center mb-4" style="font-family: 'Audiowide', sans-serif;">Bana Ulaşın</h2>
 
         <div id="app">
           <form action="#" method="post" @submit.prevent="kontrolEt" class="vstack gap-3">
             <label for="name">Ad Soyad:</label>
-            <input type="text" id="name" name="name" placeholder="Adınızı yazın" class="form-control" >
+            <input type="text" id="name" name="name" placeholder="Adınızı yazın" class="form-control" v-model="ad">
 
             <label for="email">E-posta:</label>
-            <input type="email" id="mail" name="mail" class="form-control">
+            <input type="email" id="mail" name="mail" class="form-control" v-model="email">
 
             <label for="telefon">Telefon:</label>
-            <input type="tel" id="telefon" name="telefon" class="form-control">
+            <input type="tel" id="telefon" name="telefon" class="form-control" v-model="telefon">
 
             <label>Cinsiyet:</label>
               <div>
@@ -49,7 +49,7 @@
 
 
             <label for="konu">Konu:</label>
-            <select id="konu" name="konu" class="form-select">
+            <select id="konu" name="konu" class="form-select" v-model="konu">
               <option value="genelSoru">Genel Soru</option>
               <option value="isOrtak">İş Ortaklığı</option>
               <option value="oneri">Geri bildirim / Öneri</option>
@@ -58,17 +58,25 @@
             </select>
 
             <label for="mesaj">Mesaj:</label>
-            <textarea id="mesaj" name="mesaj" class="form-control"></textarea>
+            <textarea id="mesaj" name="mesaj" class="form-control" v-model="mesaj"></textarea>
 
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" value="" id="kvkk" >
+              <input class="form-check-input" type="checkbox" value="" id="kvkk" v-model="kvkk">
               <label class="form-check-label" for="kvkk">
                 KVKK metnini okudum ve kabul ediyorum.
               </label>
             </div>
 
-            <button type="button" onclick="kontrolEt()" class="btn btn-warning">JS ile Kontrol Et</button>
-            <button type="submit" class="btn btn-success">Vue ile Kontrol Et</button>
+            <div class="butonlar d-flex justify-content-between">
+              <button type="button" onclick="kontrolEt()" class="btn btn-info">JS ile Kontrol Et</button>
+              <button type="submit" class="btn btn-info">Vue ile Kontrol Et</button>
+            </div>
+
+
+            <div class="digerButonlar d-flex justify-content-center gap-3">
+              <button type="submit" class="btn btn-success">Temizle</button>
+              <button type="submit" class="btn btn-warning">Gönder</button>
+            </div>
           </form>
         </div>
 
