@@ -41,3 +41,19 @@
     // Her şey doğruysa
     alert("Mesajınız gönderildi. En kısa zamanda geri dönüt yapılacaktır.");
   }
+
+
+
+
+  //form temizleme kısmı
+  function formuTemizle() {
+    document.getElementById("name").value = "";
+    document.getElementById("mail").value = "";
+    document.getElementById("telefon").value = "";
+    document.getElementById("konu").selectedIndex = 0;
+    document.getElementById("mesaj").value = "";
+    document.getElementById("kvkk").checked = false;
+
+    // Cinsiyet radio buttonlarını sıfırla
+    document.querySelectorAll('input[name="cinsiyet"]').forEach(el => el.checked = false);
+  }
