@@ -13,13 +13,13 @@ Projenin amacı, HTML, CSS, JavaScript ve Bootstrap kullanarak kendimi ve memlek
 - İletişim formu (JavaScript ve framework kullanılacak)
 
 ## Kullanılan Teknolojiler
-- HTML5
-- CSS3
-- Bootstrap 5
+- HTML
+- CSS
 - JavaScript
 - Vue.js (İletişim formu için)
 - PHP (Login işlemi için)
-- GitHub (Versiyon kontrolü)
+- GitHub
+- Bootstrap 
 - Hosting
 
 ## Github Kullanımı
