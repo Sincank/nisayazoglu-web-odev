@@ -10,7 +10,7 @@
 
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="ana-sayfa.css" />
+    <link rel="stylesheet" href="index.css" />
     
 </head>
 <body class="bg">
@@ -19,7 +19,9 @@
         <button class="logobtn" onclick="anaSayfayaGit()">
             <img src="ana-sayfa-malz/ana-sayfa-logosu.png" >
         </button>
-        <a href="giris-yap.html" class="btn logobtn ms-auto me-2 ms-auto">Giriş Yap</a>
+
+        <a href="iletisim.html" class="btn logobtn ms-auto">İletişim</a>
+        <a href="giris-yap.html" class="btn logobtn me-2 ">Giriş Yap</a>
 
     </nav>
     
@@ -28,13 +30,13 @@
 
     <div class="slider">
         <section class="slide" id="sayfa1">
-             <img src="ana-sayfa-malz/konuşma-balonu4.png" class="ustkisim">
+             <img src="ana-sayfa-malz/konuşma-balonu4.png" class="ustkisim img-fluid">
              <button class="sag-buton" onclick="yanSayfa(2)">&gt;</button>
         </section>
 
         <section class="slide" id="sayfa2">
             <a href="hakkımda.html">
-                <img src="ana-sayfa-malz/hakkımdagezegeni.png" class="ustkisim gezegen-hover">
+                <img src="ana-sayfa-malz/hakkımdagezegeni.png" class="ustkisim img-fluid gezegen-hover">
             </a>
 
             <button class="sol-buton" onclick="yanSayfa(1)">&lt;</button>
@@ -43,7 +45,7 @@
 
         <section class="slide" id="sayfa3">
             <a href="memleket.html">
-                <img src="ana-sayfa-malz/memleketgezegeni.png" class="ustkisim gezegen-hover">
+                <img src="ana-sayfa-malz/memleketgezegeni.png" class="ustkisim img-fluid gezegen-hover">
             </a>
             
 
@@ -59,6 +61,6 @@
     
     
 
-    <script src="ana-sayfa.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>

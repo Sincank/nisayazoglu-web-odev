@@ -87,16 +87,92 @@ nav {
 }
 
 .ustkisim {
-    position: absolute;
-    top: 0%;
+  position: absolute;
+  top: 0%;
 }
-
 .gezegen-hover {
     transition: transform 0.3s ease, filter 0.3s ease;
 }
 
 
 .gezegen-hover:hover {
-    transform: scale(1.1); /*büyüme */
-    filter: brightness(1.2); /* parlama */
+    transform: scale(1.1); 
+    filter: brightness(1.2); 
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .logobtn {
+    margin: 0 0.25rem;
+    padding: 0;
+  }
+
+  .logobtn img {
+    width: 35px !important;
+  }
+
+  .logobtn:last-child {
+    margin-right: 0;
+  }
+
+
+  .slide {
+    font-size: 16px;
+    padding: 1rem 0.5rem;
+    justify-content: flex-start;
+  }
+
+  .ustkisim,
+  .gezegen-hover {
+    max-width: 90% !important;
+    margin-top: 4rem;
+    position: relative !important;
+  }
+
+    .ustkisim {
+    position: relative !important;
+    top: auto !important;
+    margin-top: 4rem;
+  }
+
+  .roket-sabit {
+    
+    width: 400px;
+    bottom: 10px; /* 0 yerine biraz yukarı al */
+    display: block; /* Gizlenmişse tekrar göster */
+  }
+  
+
+  /* Ok butonlar karışmasın */
+  .sag-buton,
+  .sol-buton {
+    font-size: 20px;
+    top: 60%;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 4px 10px;
+    border-radius: 5px;
+  }
+
+  .sag-buton {
+    right: 10px;
+  }
+
+  .sol-buton {
+    left: 10px;
+  }
+
+  .slider {
+    width: 300vw;
+    overflow: hidden;
+  }
+
+  body {
+    overflow: auto !important;
+  }
 }

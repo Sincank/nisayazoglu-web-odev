@@ -18,14 +18,13 @@
 </head>
 <body>
     <nav class="d-flex p-3 align-items-center"> <!--d-flex yatay hizalama yapar. girişi sağa koymak için lazım oldu.-->
-        <a href="ana-sayfa.html">
+        <a href="index.html">
             <img src="ana-sayfa-malz/ana-sayfa-logosu.png" alt="logo" class="hakkımda-butonları me-3 ms-2" width="50px">
         </a>
 
       <button class="btn hakkımda-butonları" data-bs-toggle = "modal" data-bs-target="#ozgecmisModal"> Özgeçmiş </button>
       
-      <a href="iletisim.html" class="btn hakkımda-butonları ms-auto">İletişim</a>
-      <a href="giris-yap.html" class="btn hakkımda-butonları me-2">Giriş Yap</a>
+ 
     </nav>
 
   <div class="container">
@@ -90,19 +89,29 @@
         </div>
     </div>
 
+
+
     <div class="d-flex flex-column align-items-center profil-kutusu">
-      <img src="profile.jpg" alt="kendi fotoğrafım" class="profil-resmi">
+      <img src="profile.png" alt="kendi fotoğrafım" class="profil-resmi">
 
       <h1 style="color: white;">Nisa Yazoğlu</h1>
 
-      <p class="description rounded text-center" style="color: white;">
+      <p class="description rounded text-center tanitim" style="color: white;">
         Sakarya Üniversitesi Bilgisayar Mühendisliği bölümünde 1.sınıf öğrencisiyim. Mezun olduktan sonra, binlerce medeniyetin ve dolayısıyla milyonlarca hikayenin yaşamış olduğu bu topraklarda kendi animasyon stüdyomu kurup hikayelerimi anlatabileceğime inanıyorum. 
       </p>
+
+      <div>
+        <a href="#gezegenKutusu">
+          <img src="hakkımda-malz/asagi2.png" class="asagi-ok">
+        </a>
+      </div>
     </div>
     
+      
   </div>
+
     
-    <div class="gezegen-kutusu">
+    <div class="gezegen-kutusu" id="gezegenKutusu">
       <div class="d-flex flex-column align-items-center">
         <img src="hakkımda-malz/gezegenler-hakkımda/hobiler.png" class="gezegenler">
         <a href="#hobiler" class="btn mt-2 gezBtn hobiRenk">İniş Yap</a>
@@ -135,6 +144,13 @@
           <p style="color: white; margin-right: 30px;" >Eski para toplamak!</p>
           <img src="hakkımda-malz/hobiler/eskipara.png" alt="Eski Para" class="me-4" id="eskiPara">
         </div>
+
+        <div class="text-center my-4">
+          <a href="#gezegenKutusu">
+            <img src="hakkımda-malz/asagi.png" class="asagi-ok">
+          </a>
+        </div>
+
     </div>
 
     <div class="filmler" id="filmler">
@@ -146,6 +162,11 @@
             <img src="hakkımda-malz/filmler/spiderverse.jpg" alt="Spider-verse Filmleri">
             <img src="hakkımda-malz/filmler/waltermitty.png" alt="Walter Mitty'nin Gizli Yaşamı" >
         </div>
+        <div class="text-center my-4">
+          <a href="#gezegenKutusu">
+            <img src="hakkımda-malz/asagi.png" class="asagi-ok">
+          </a>
+        </div>
     </div>
 
     <div class="kitaplar" id="kitaplar">
@@ -156,6 +177,11 @@
             <img src="hakkımda-malz/kitaplar/kaynanam.jpg" alt="Evlere Şenlik Kaynanam Nasıl Kudurdu">
             <img src="hakkımda-malz/kitaplar/redkit.png" alt="Red Kit'i Öldüren Adam">
             <img src= "hakkımda-malz/kitaplar/lanetlitavsan.jpg" alt="Lanetli Tavşan">
+        </div>
+        <div class="text-center my-4">
+          <a href="#gezegenKutusu">
+            <img src="hakkımda-malz/asagi.png" class="asagi-ok sonButon">
+          </a>
         </div>
     </div>
 

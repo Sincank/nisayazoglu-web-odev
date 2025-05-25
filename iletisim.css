@@ -1,27 +1,82 @@
 body {
-    overflow: hidden;
-    background-color: rgb(34, 5, 98);
+    
+    background-image: url(gecici.jpeg);
+    background-size: cover;       
+    background-repeat: no-repeat;
+    background-position: center; 
     color: white;
     font-family: 'Audiowide', sans-serif;
 }
 
 
 .form-container {
-  max-height: 100vh;
+  max-height: 120vh;
   overflow: visible;
   padding: 0 15px;
   box-sizing: border-box;
+
+  background-color: rgba(0, 0, 0, 0.5); 
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+
+
+  position: relative;
 }
 
+
+
+
+
 form label {
-  margin-bottom: 2px;
-  font-size: 0.85rem;
+  margin-bottom: 1.5px;
+  font-size: 0.75rem;
 }
 
 form input, form select, form textarea {
 
   margin-bottom: 0.5px;
 }
+
+
+img {
+  max-width: 200px;
+  height: 200px;
+  display: block;
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+}
+
+.ok {
+  position: absolute; /* Konumlandırmayı serbest bırak */
+  top: 0px;          /* Üstten 10px boşluk */
+  left: 20px;         /* Soldan 10px boşluk */
+  width: 40px;        /* Küçük boyut */
+  height: auto;
+  z-index: 10;        /* Diğer öğelerin üstünde */
+}
+
+.ok {
+  cursor: pointer;
+  transition: transform 250ms;
+
+}
+
+.ok:hover {
+  transform: scale(1.1);
+  color: gray;
+}
+
+.ok:active {
+  transform: scale(0.8);
+  color: white !important;
+}
+
+
+
+
+
 
 
 

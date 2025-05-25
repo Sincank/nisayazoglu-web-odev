@@ -1,6 +1,5 @@
 <?php
 session_start();
-
 // Eğer bir hata varsa onu göster ve çık
 if (isset($_SESSION['form_hata'])) {
     $hata = $_SESSION['form_hata'];

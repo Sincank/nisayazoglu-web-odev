@@ -153,7 +153,19 @@ nav {
     transform: scale(0.8);
 }
 
+.sehir-item:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
 
+
+
+@media (max-width: 768px) {
+  .flex-responsive {
+    flex-direction: column !important;
+  }
+}
 
 
 
